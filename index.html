@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Anton &amp; Christie Wedding Invitation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <style>
     body {
       background-color: #eee;
@@ -16,9 +16,7 @@
       padding: 40px 0;
 
     }
-    body.mandarin {
-      background-image: url('bg-mandarin.jpg');
-    }
+    
     .fs-shadow {
       box-shadow: 0 5vw 10vw rgba(0,0,0,0.3);
     }
@@ -36,7 +34,16 @@
       position: static;
     }
     .extra-tall {
-      height: 250vh;
+      height: 280vh;
+    }
+    .img-zh {
+      display: none;
+    }
+    .mandarin .img-zh {
+      display: inline;
+    }
+    .mandarin .img-en {
+      display: none;
     }
     .envelope {
       position: relative;
@@ -56,7 +63,7 @@
       width: 80%;  
       transform: translateX(-50%) translateY(-50%);
       color: #fff;
-      font-family: 'Lobster', cursive;
+      font-family: 'Playfair Display', serif;
       line-height: 1;
       text-shadow: 0 -2px 1px rgba(0,0,0,0.3);
     }
@@ -104,7 +111,6 @@
             <img src="180814_buntie wedding invitation-03.jpg" alt="" class="img-fluid fs-shadow">
             <div class="text">
               <div class="the-text" id="the-text">
-                Felix Keren <br>&amp; <br> Amel Beken
               </div>
             </div>
           </div>
@@ -118,7 +124,8 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <div class="p10">
-            <img src="180814_buntie wedding invitation-01.jpg" alt="" class="img-fluid fs-shadow">
+            <img src="180814_buntie wedding invitation-01.jpg" alt="" class="img-en img-fluid fs-shadow">
+            <img src="mandarin-invitation.jpg" alt="" class="img-zh img-fluid fs-shadow">
   
           </div>
         </div>
@@ -141,7 +148,8 @@
       var name = getParameterByName('n');
       var version = getParameterByName('v');
       if(name) {
-        name = name.split('@').join(' & ')
+        name = name.split('@').join(' & ');
+        name = name.replace(/\^/g, '<br>');
         $('#the-text').html(name);
       }
       if(version === 'zh') {
