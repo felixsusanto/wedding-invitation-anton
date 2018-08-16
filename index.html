@@ -16,6 +16,9 @@
       padding: 40px 0;
 
     }
+    body.mandarin {
+      background-image: url('bg-mandarin.jpg');
+    }
     .fs-shadow {
       box-shadow: 0 5vw 10vw rgba(0,0,0,0.3);
     }
@@ -136,14 +139,17 @@
     }
     $(document).ready(function() {
       var name = getParameterByName('n');
+      var version = getParameterByName('v');
       if(name) {
         name = name.split('@').join(' & ')
         $('#the-text').html(name);
       }
+      if(version === 'zh') {
+        $('body').addClass('mandarin');
+      }
 
       var waypoints = $('#hitbox').waypoint({
         handler: function (direction) {
-          console.log('hitttingg!!!', direction);
           if(direction === 'down') {
             $('.posfix').addClass('static');
           } else {
