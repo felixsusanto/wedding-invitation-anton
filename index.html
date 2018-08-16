@@ -11,8 +11,8 @@
     body {
       background-color: #eee;
       background-image: url('bg.jpg');
-      background-position: 70% 0%;
-      background-size: cover;
+      background-position: 50%;
+      background-size: 100%;
       padding: 40px 0;
     }
 
@@ -235,7 +235,6 @@
       $(window).on('load', function() {
         $('.loader-container').remove();
         $('body').removeClass('ov-hidden');
-        alert('loaded!');
         var waypoints = $('#hitbox').waypoint({
           handler: function (direction) {
             if(direction === 'down') {
