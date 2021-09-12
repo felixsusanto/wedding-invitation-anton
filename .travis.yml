@@ -6,10 +6,10 @@ install:
 jobs:
   include:
     - stage: Staging
-      script: CI=false npm run build:staging
+      script: CI=false npm run deploy:forked
       deploy:
         provider: pages
-        target_branch: deploy-uat
+        target_branch: uat
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         local_dir: build
