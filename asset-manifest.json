@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dd-invitation/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/dd-invitation/static/js/main.703946d0.chunk.js",
+    "main.js.map": "/dd-invitation/static/js/main.703946d0.chunk.js.map",
+    "runtime-main.js": "/dd-invitation/static/js/runtime-main.f51b2e94.js",
+    "runtime-main.js.map": "/dd-invitation/static/js/runtime-main.f51b2e94.js.map",
+    "static/js/2.a411e8b1.chunk.js": "/dd-invitation/static/js/2.a411e8b1.chunk.js",
+    "static/js/2.a411e8b1.chunk.js.map": "/dd-invitation/static/js/2.a411e8b1.chunk.js.map",
+    "static/js/3.550cef8f.chunk.js": "/dd-invitation/static/js/3.550cef8f.chunk.js",
+    "static/js/3.550cef8f.chunk.js.map": "/dd-invitation/static/js/3.550cef8f.chunk.js.map",
+    "index.html": "/dd-invitation/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/dd-invitation/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.a411e8b1.chunk.js.LICENSE.txt": "/dd-invitation/static/js/2.a411e8b1.chunk.js.LICENSE.txt",
+    "static/media/Don-Den-01-cover.fa175bfa.jpg": "/dd-invitation/static/media/Don-Den-01-cover.fa175bfa.jpg",
+    "static/media/Don-Den-02-inv.0f536edd.jpg": "/dd-invitation/static/media/Don-Den-02-inv.0f536edd.jpg",
+    "static/media/bg.c54fc838.jpg": "/dd-invitation/static/media/bg.c54fc838.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f51b2e94.js",
+    "static/js/2.a411e8b1.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.703946d0.chunk.js"
+  ]
+}
