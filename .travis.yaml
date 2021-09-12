@@ -5,16 +5,6 @@ install:
   - npm ci
 jobs:
   include:
-    - stage: Release
-      script: CI=false npm run build
-      deploy:
-        provider: pages
-        skip_cleanup: true
-        github_token: $GITHUB_TOKEN
-        local_dir: build
-        keep_history: true
-        on:
-          branch: main
     - stage: Staging
       script: CI=false npm run build:staging
       deploy:
