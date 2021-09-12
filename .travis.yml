@@ -5,8 +5,19 @@ install:
   - npm ci
 jobs:
   include:
-    - stage: Staging
+    - stage: Staging CF
       script: CI=false npm run deploy:forked:cf
+      deploy:
+        provider: pages
+        target_branch: uat-cf
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: build
+        keep_history: true
+        on:
+          branch: react-branch
+    - stage: Staging GH page
+      script: CI=false npm run deploy:forked:pages
       deploy:
         provider: pages
         target_branch: uat
