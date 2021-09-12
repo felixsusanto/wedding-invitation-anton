@@ -6,7 +6,7 @@ install:
 jobs:
   include:
     - stage: Staging
-      script: CI=false npm run deploy:forked
+      script: CI=false npm run deploy:forked:cf
       deploy:
         provider: pages
         target_branch: uat
