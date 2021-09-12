@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wedding-invitation-anton/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/wedding-invitation-anton/static/js/main.703946d0.chunk.js",
+    "main.js.map": "/wedding-invitation-anton/static/js/main.703946d0.chunk.js.map",
+    "runtime-main.js": "/wedding-invitation-anton/static/js/runtime-main.5fba9fd6.js",
+    "runtime-main.js.map": "/wedding-invitation-anton/static/js/runtime-main.5fba9fd6.js.map",
+    "static/js/2.b5a6d98c.chunk.js": "/wedding-invitation-anton/static/js/2.b5a6d98c.chunk.js",
+    "static/js/2.b5a6d98c.chunk.js.map": "/wedding-invitation-anton/static/js/2.b5a6d98c.chunk.js.map",
+    "static/js/3.550cef8f.chunk.js": "/wedding-invitation-anton/static/js/3.550cef8f.chunk.js",
+    "static/js/3.550cef8f.chunk.js.map": "/wedding-invitation-anton/static/js/3.550cef8f.chunk.js.map",
+    "index.html": "/wedding-invitation-anton/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/wedding-invitation-anton/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.b5a6d98c.chunk.js.LICENSE.txt": "/wedding-invitation-anton/static/js/2.b5a6d98c.chunk.js.LICENSE.txt",
+    "static/media/Don-Den-01-cover.fa175bfa.jpg": "/wedding-invitation-anton/static/media/Don-Den-01-cover.fa175bfa.jpg",
+    "static/media/Don-Den-02-inv.0f536edd.jpg": "/wedding-invitation-anton/static/media/Don-Den-02-inv.0f536edd.jpg",
+    "static/media/bg.c54fc838.jpg": "/wedding-invitation-anton/static/media/bg.c54fc838.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fba9fd6.js",
+    "static/js/2.b5a6d98c.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.703946d0.chunk.js"
+  ]
+}
