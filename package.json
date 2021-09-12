@@ -13,6 +13,7 @@
     "@types/styled-components": "^5.1.14",
     "env-cmd": "^10.1.0",
     "react": "^17.0.2",
+    "react-div-100vh": "^0.6.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.1",

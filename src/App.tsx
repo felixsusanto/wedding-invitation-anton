@@ -3,6 +3,7 @@ import styled from "styled-components";
 import cover from "./img/Don-Den-01-cover.jpg";
 import inv from "./img/Don-Den-02-inv.jpg";
 import bg from "./img/bg.jpg";
+import Div100vh, { use100vh } from "react-div-100vh";
 
 const AppContainer = styled.div`
   background: url("${bg}");
@@ -15,9 +16,6 @@ const CentralizedLayout = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-`;
-const SecondContainer = styled.div`
-  height: 100vh;
 `;
 
 const InvitationCover = styled.div`
@@ -62,8 +60,8 @@ const Invitation = styled.img`
   position: fixed;
   top: 50%;
   left: 50%;
-
   transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 5vw 10vw rgba(0, 0, 0, 0.3);
   @media (orientation: portrait) {
     width: 85vw;
     max-width: 630px;
@@ -142,7 +140,7 @@ const HeartLoader = () => {
 
 const getParameterByName = (name: string, url?: string) => {
   if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
+  name = name.replace(/[[]]/g, "\\$&");
   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
     results = regex.exec(url);
   if (!results) return null;
@@ -154,6 +152,7 @@ function App() {
   const [loaderActive, setLoaderActive] = React.useState<boolean>(true);
   const [imgLoadCount, setImgLoadCount] = React.useState<number>(0);
   const [invitee, setInvitee] = React.useState<string>();
+  const height = use100vh();
   React.useEffect(() => {
     if (imgLoadCount === 3) {
       setLoaderActive(false);
@@ -168,12 +167,13 @@ function App() {
   return (
     <AppContainer>
       <img
+        alt="loading"
         src={bg}
         style={{ display: "none" }}
         onLoad={() => setImgLoadCount(imgLoadCount + 1)}
       />
       <Invitation src={inv} onLoad={() => setImgLoadCount(imgLoadCount + 1)} />
-      <CentralizedLayout>
+      <CentralizedLayout style={{ height: `${height}px` }}>
         <InvitationCover>
           <img
             src={cover}
@@ -187,7 +187,7 @@ function App() {
           </div>
         </InvitationCover>
       </CentralizedLayout>
-      <SecondContainer />
+      <Div100vh />
       {loaderActive && (
         <CentralizedLayout
           style={{
@@ -197,6 +197,7 @@ function App() {
             left: 0,
             width: "100%",
             zIndex: 10,
+            height: `${height}px`,
           }}
         >
           <HeartLoader />
